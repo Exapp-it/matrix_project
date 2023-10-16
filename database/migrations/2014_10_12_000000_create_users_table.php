@@ -13,12 +13,19 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('username')->unique();
             $table->string('password');
+            $table->string('email')->unique();
+            $table->decimal('balance', 10, 2)->default(0);
+            $table->unsignedBigInteger('referrer')->nullable();
             $table->rememberToken();
             $table->timestamps();
+
+            $table->foreign('referrer')->references('id')->on('users');
+
+            $table->index('username');
+            $table->index('email');
+            $table->index('referrer');
         });
     }
 
