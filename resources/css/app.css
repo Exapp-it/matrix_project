@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Стили для героя (hero) секции */
+.hero {
+    background-image: url('path/to/your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+/* Стили для других секций (about, events, contact) */
+.about, .events, .contact {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.events ul {
+    list-style: none;
+    padding: 0;
+}
+
+.events ul li {
+    margin: 20px 0;
+}
+
+.events ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Стили для footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Медиазапросы для адаптивного дизайна (пример) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
